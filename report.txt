@@ -1,0 +1,19 @@
+Q3 implementation:
+
+for this i used the partition method to minimise dfa
+in this finally we get the sets which have to be consider as same state
+form this we can construct minimised dfa
+
+Q4 implementation:
+in this i implemented the normal regex to nfa algorithm which we manually use to convert regex to nfa i,e
+
+1.if we get alphabet we add another state with transition from previous to this by the alphabet
+
+2.if we get "+" we start from the starting state again and store the present state in final array
+
+3.if we get "*" we add epsilon transition from previous to present state and viceversa
+
+4. if we get "(" we traverse to get the sub regex and call the same function with start state as the present state
+
+5.finally we add epsilon transition from all final states stored in array to created unique final state 
+ 
